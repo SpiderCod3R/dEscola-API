@@ -35,4 +35,4 @@ class Avaliacao(Base):
         unique_together = ('email', 'curso') # Cada pessoa com o mesmo email nao pode avaliar mais de uma vez
 
     def __str__(self):
-        return f'{self.nome} avaliou o curso {self.curso} com nota {self.avaliacao} '
+        return f'{self.nome} avaliou o curso {self.curso} com nota {self.avaliacao}'
