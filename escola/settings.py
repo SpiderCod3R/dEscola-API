@@ -31,7 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'material',
+    'material.admin',
+
+    # 'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -85,9 +88,7 @@ WSGI_APPLICATION = 'escola.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'db-name',
-        'USERNAME': 'mongoAdmin',
-        'PASSWORD': 'admin'
+        'NAME': 'descola',
     }
 }
 
