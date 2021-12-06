@@ -23,9 +23,6 @@ class AvaliacaoSerializer(serializers.ModelSerializer):
 
 class CursoSerializer(serializers.ModelSerializer):
     class Meta:
-        extra_kwargs = {
-            'titulo': {'write_only': True}
-        }
         model = Curso
         fields = (
             'id',
