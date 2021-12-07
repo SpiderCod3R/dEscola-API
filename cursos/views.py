@@ -72,9 +72,8 @@ class AvaliacaoViewSet(
     mixins.UpdateModelMixin,
     mixins.DestroyModelMixin,
     viewsets.GenericViewSet
-    ):
-
+):
     queryset = Avaliacao.objects.all()
-    serializer_class = AvaliacaoSerializer()
+    serializer_class = AvaliacaoSerializer
 
 
