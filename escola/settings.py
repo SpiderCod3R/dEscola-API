@@ -16,6 +16,8 @@ user = User.objects.get(id='')
 token = Token.create(user=user)
 token_key = token.key
 Authorization Token token_key
+
+Token Spider: Token b0f3a2a63f0c8f59722f2d9034d3b0e694694a50
 """
 import os.path
 from pathlib import Path
