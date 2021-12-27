@@ -11,10 +11,10 @@ curso_atualizado = {
 }
 
 # Buscando o Curso com ID 5
-curso = requests.get(url=f'{url_base_cursos}5/', headers=headers)
+curso = requests.get(url=f'{url_base_cursos}6/', headers=headers)
 assert curso.json()['titulo'] == "Gerência Ágil de Projetos com SCRUM"
 
-resultado = requests.put(url=f'{url_base_cursos}5/', headers=headers, data=curso_atualizado)
+resultado = requests.put(url=f'{url_base_cursos}6/', headers=headers, data=curso_atualizado)
 
 print(resultado.json())
 
